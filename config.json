@@ -1,0 +1,21 @@
+{
+    "identity_rules": [
+        { "key": "imei", "name": "IMEI号", "prefix": "IMEI:", "enable": true },
+        { "key": "imsi", "name": "IMSI号", "prefix": "IMSI:", "enable": true },
+        { "key": "mac",  "name": "MAC地址", "prefix": "MAC:",  "enable": true },
+        { "key": "ccid", "name": "CCID",   "prefix": "CCID:", "enable": false }
+    ],
+    "telemetry_rules": [
+        { "key": "shock", "name": "震动", "type": "match", "target": "1", "enable": true },
+        { "key": "rsrp", "name": "信号强度", "type": "range", "min": -140, "max": -40, "enable": true },
+        { "key": "snr", "name": "信噪比", "type": "range", "min": -20, "max": 30, "enable": true },
+        { "key": "v", "name": "电压(V)", "type": "range", "min": 3.5, "max": 4.5, "enable": true },
+        { "key": "t1", "name": "温度T1", "type": "range", "min": 0.0, "max": 50.0, "enable": true },
+        { "key": "t2", "name": "温度T2", "type": "range", "min": 20.0, "max": 60.0, "enable": true },
+        { "key": "pwr", "name": "电源状态", "type": "match", "target": "1", "enable": true },
+        { "key": "sv", "name": "卫星数", "type": "range", "min": 3, "max": 50, "enable": true },
+        { "key": "reg", "name": "网络注册", "type": "match", "target": "1", "enable": true },
+        { "key": "helmet", "name": "头盔检测", "type": "match", "target": "1", "enable": true },
+        { "key": "uhf", "name": "UHF读卡", "type": "match", "target": "1", "enable": true }
+    ]
+}
